@@ -1,7 +1,7 @@
 {
   "port": "8080",
   "staticPath": "build/static",
-  "googleCloudApiKey": "enter your API key here",
+  "googleCloudApiKey": "AIzaSyAn1zkdgXJGw-Y4P0cw-WA4ew-q6qh_tvw",
   "toxicityAttribute": "TOXICITY",
-  "cloudProjectId": "enter your cloud project id here"
+  "cloudProjectId": "fluxtox"
 }

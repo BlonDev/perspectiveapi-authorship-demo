@@ -2,7 +2,7 @@
                      (opened)="showDemoSettings = true; onSettingsChanged();"
                      (closed)="showDemoSettings = false; onSettingsChanged();" >
   <mat-expansion-panel-header>
-    Demo Settings
+    DEMO Settings
   </mat-expansion-panel-header>
 
   <div>
@@ -53,7 +53,7 @@
     </div>
 
     <!-- Configuration for user suggestions. -->
-    <div class="setting">
+    <!-- <div class="setting">
       <mat-form-field>
         <mat-select placeholder="Correction style"
                    shouldPlaceholderFloat="true"
@@ -64,10 +64,10 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
-    </div>
+    </div> -->
 
     <!-- Loading icon/widget style. -->
-    <div class="setting">
+    <!-- <div class="setting">
       <mat-form-field>
         <mat-select placeholder="Loading icon style"
                    shouldPlaceholderFloat="true"
@@ -79,7 +79,7 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
-    </div>
+    </div> -->
 
     <!-- Feedback message -->
     <div class="setting">
@@ -173,9 +173,9 @@
       <mat-slide-toggle [(ngModel)]="showPercentage" (change)="onSettingsChanged()">Show percentage</mat-slide-toggle>
     </div>
 
-    <div class="setting">
+    <!-- <div class="setting">
       <mat-slide-toggle [(ngModel)]="showMoreInfoLink" (change)="onSettingsChanged()">Show more info link</mat-slide-toggle>
-    </div>
+    </div> -->
 
     <div class="setting">
       <mat-slide-toggle [(ngModel)]="hideLoadingIconAfterLoad"
@@ -196,7 +196,7 @@
       </mat-slide-toggle>
     </div>
 
-    <div class="setting">
+    <!-- <div class="setting">
       <mat-slide-toggle [(ngModel)]="useGapi"
                        (change)="updateApiKey($event); onSettingsChanged()">Use gapi
       </mat-slide-toggle>
@@ -207,9 +207,9 @@
                (input)="onSettingsChanged()"
                placeholder="API key"/>
       </mat-form-field>
-    </div>
+    </div> -->
   
-    <div class="setting">
+    <!-- <div class="setting">
       <mat-slide-toggle [(ngModel)]="usePluginEndpoint"
                        (change)="onSettingsChanged()">Use plugin endpoint
       </mat-slide-toggle>
@@ -220,7 +220,7 @@
                (input)="onSettingsChanged()"
                placeholder="Plugin server URL"/>
       </mat-form-field>
-    </div>
+    </div> -->
 
 
     <div class="setting">
@@ -232,25 +232,25 @@
       </mat-form-field>
     </div>
 
-    <div class="communityId">
+    <!-- <div class="communityId">
       <mat-form-field>
         <input matInput
                [(ngModel)]="communityId"
                (input)="onSettingsChanged()"
                placeholder="Community id"/>
       </mat-form-field>
-    </div>
+    </div> -->
   </div>
 </mat-expansion-panel>
 
-<mat-expansion-panel id="jsonPanel">
+<!-- <mat-expansion-panel id="jsonPanel">
   <mat-expansion-panel-header>
     Copy/pasteable JSON Demo Settings
   </mat-expansion-panel-header>
   <div>
     {{demoSettingsJson}}
   </div>
-</mat-expansion-panel>
+</mat-expansion-panel> -->
 
 <div class="divider"></div>
 
