@@ -2,7 +2,7 @@
                      (opened)="showDemoSettings = true; onSettingsChanged();"
                      (closed)="showDemoSettings = false; onSettingsChanged();" >
   <mat-expansion-panel-header>
-    DEMO Settings
+    SETTINGS
   </mat-expansion-panel-header>
 
   <div>
@@ -173,9 +173,9 @@
       <mat-slide-toggle [(ngModel)]="showPercentage" (change)="onSettingsChanged()">Show percentage</mat-slide-toggle>
     </div>
 
-    <!-- <div class="setting">
+    <div class="setting">
       <mat-slide-toggle [(ngModel)]="showMoreInfoLink" (change)="onSettingsChanged()">Show more info link</mat-slide-toggle>
-    </div> -->
+    </div>
 
     <div class="setting">
       <mat-slide-toggle [(ngModel)]="hideLoadingIconAfterLoad"
