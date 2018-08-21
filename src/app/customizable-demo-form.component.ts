@@ -49,7 +49,7 @@ const ColorSchemes = {
 };
 
 /** Arrays of colors that can be used as colors in a ColorScheme. */
-const DEFAULT_COLORS = ["#25C1F9", "#7C4DFF", "#D400F9"];
+const DEFAULT_COLORS = ["#1fbf1d", "#fdf043", "#f9000b"];
 const TRAFFIC_LIGHT_COLORS = ["#4CAF50", "#FDD835", "#D50000"];
 
 /** Describes a configuration for feedback text to use in the demo. */
@@ -100,7 +100,7 @@ function arraysEqual<T>(array1: T[], array2: T[]): boolean {
 })
 export class CustomizableDemoForm implements OnInit {
   /** Whether to show the expanded demo settings. */
-  showDemoSettings = true;
+  showDemoSettings = false;
 
   /** Color scheme options. */
   colorSchemes: ColorScheme[] = [
@@ -179,7 +179,7 @@ export class CustomizableDemoForm implements OnInit {
   // Whether to show the percentage next to the feedback text.
   showPercentage = true;
   // Whether to show a "more info" link next to the feedback text.
-  showMoreInfoLink = true;
+  showMoreInfoLink = false;
   // The text to use to prompt users to submit feedback.
   userFeedbackPromptText = 'Seem wrong?';
   // Whether to hide the loading icon after loading completes.
